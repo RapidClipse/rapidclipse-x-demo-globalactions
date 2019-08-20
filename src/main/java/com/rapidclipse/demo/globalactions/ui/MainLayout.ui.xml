@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template NONE?>
+<?import com.rapidclipse.demo.globalactions.ui.View1?>
+<?import com.rapidclipse.demo.globalactions.ui.View2?>
+<?import com.rapidclipse.demo.globalactions.ui.View3?>
+<?import com.rapidclipse.demo.globalactions.ui.actions.SaveAction?>
+<?import com.vaadin.flow.component.button.Button?>
+<?import com.vaadin.flow.component.orderedlayout.HorizontalLayout?>
+<?import com.vaadin.flow.component.orderedlayout.VerticalLayout?>
+<?import com.vaadin.flow.router.RouterLink?>
+<VerticalLayout xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="MainLayout" x:routerLayout="true">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <HorizontalLayout x:name="horizontalLayout">
+        <x:constraints width="-1px" height="-1px" flex-grow="0.0" />
+        <RouterLink x:name="routerLink" text="View1" x:navigationTarget="View1">
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+        </RouterLink>
+        <RouterLink x:name="routerLink2" text="View2" x:navigationTarget="View2">
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+        </RouterLink>
+        <RouterLink x:name="routerLink3" text="View3" x:navigationTarget="View3">
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+        </RouterLink>
+        <Button x:action="SaveAction" x:name="cmdSave" text="Save">
+            <x:icon src="com.flowingcode.vaadin.addons.ironicons.IronIcons#SAVE" />
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+        </Button>
+    </HorizontalLayout>
+</VerticalLayout>
+
